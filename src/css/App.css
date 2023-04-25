@@ -1,0 +1,23 @@
+.App {
+  background-color: #cddbf7;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.navbar{
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+}
+.App-logo{
+padding:8px;
+animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
