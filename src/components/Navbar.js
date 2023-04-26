@@ -1,17 +1,20 @@
 import logo from'../static/car-wheel.png'
 import { Link } from 'react-router-dom'
 
-let Navbar = props => {
+let Navbar = () => {
+ 
 
     
     return (
         <div>
-            <nav className="navbar navbar-dark bg-dark">
+            <nav className="navbar navbar-light">
             <Link className="navbar-brand" to="/">
-                <img className="App-logo" src={logo} width="35" height="35" alt=""/>
+                <img className="App-logo" src={logo} width="40" height="40" alt=""/>
             </Link>
-            <button className='btn btn-sm btn-info'>Sign In</button>
-            <button className='btn btn-sm btn-info'>Sign Up</button>
+            <div>
+                <button className='btn btn-sm btn-secondary nav-btn'>Sign In</button>
+                <button className='btn btn-sm btn-secondary nav-btn'>Sign Up</button>
+            </div>
             </nav>
         </div>
     )
